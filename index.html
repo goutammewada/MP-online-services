@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghar Baithe Character Certificate | MP Online Services</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Poppins', sans-serif; }
@@ -14,8 +17,10 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
+    <!-- Top Navigation / Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- Brand Logo & Name -->
             <div class="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-12 h-12">
                     <circle cx="50" cy="50" r="45" fill="none" stroke="#1e3a8a" stroke-width="3"/>
@@ -29,6 +34,7 @@
                     <span class="text-[10px] text-orange-600 font-extrabold tracking-widest uppercase">Fast • Reliable • Secure</span>
                 </div>
             </div>
+            <!-- Desktop Call Button -->
             <div class="hidden sm:block">
                 <a href="tel:7389329976" class="bg-blue-900 hover:bg-blue-950 text-white px-5 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 transition duration-300">
                     <i class="fas fa-phone-alt text-orange-500"></i> 7389329976
@@ -37,11 +43,13 @@
         </div>
     </header>
 
+    <!-- Hero & Lead Capture Section -->
     <section class="relative bg-gradient-to-br from-blue-950 via-blue-900 to-slate-900 text-white overflow-hidden py-10 lg:py-20">
         <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
         
         <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-10 items-center relative z-10">
             
+            <!-- Left Grid: Value Proposition -->
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                 <div class="inline-flex items-center gap-2 bg-blue-800/50 border border-blue-700/60 rounded-full px-4 py-1.5 text-xs sm:text-sm text-orange-400 font-semibold">
                     <i class="fas fa-check-circle text-green-400"></i> Government Approved & 100% Verified
@@ -53,6 +61,7 @@
                     No need to visit government offices or police stations. Get your verified Character Certificate online from anywhere in Madhya Pradesh quickly and securely.
                 </p>
                 
+                <!-- Icon Highlight Grid -->
                 <div class="grid grid-cols-2 gap-3 max-w-md mx-auto lg:mx-0 pt-2 text-left">
                     <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/10">
                         <i class="fas fa-laptop text-orange-500 text-lg"></i>
@@ -64,6 +73,7 @@
                     </div>
                 </div>
 
+                <!-- Desktop Action Buttons -->
                 <div class="hidden sm:flex flex-col sm:flex-row gap-4 pt-4">
                     <a href="https://wa.me/917389329976?text=Hi,%20I%20want%20to%20apply%20for%20a%20Character%20Certificate" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-lg transition duration-300">
                         <i class="fab fa-whatsapp text-xl"></i> Apply Via WhatsApp
@@ -74,6 +84,7 @@
                 </div>
             </div>
 
+            <!-- Right Grid: Form Card -->
             <div class="lg:col-span-5">
                 <div class="bg-white rounded-2xl p-5 sm:p-8 shadow-xl text-slate-900 border border-slate-100">
                     <div class="text-center mb-5">
@@ -81,44 +92,31 @@
                         <h3 class="text-lg font-bold text-blue-900 mt-2">Start Your Application Today</h3>
                         <p class="text-xs text-slate-500 mt-0.5">Fill details to get instant assistance from our experts</p>
                     </div>
-<form onsubmit="sendToWhatsApp(event)" class="space-y-4">
-    <div>
-        <label class="block text-xs font-semibold text-slate-600 mb-1">Your Full Name</label>
-        <input type="text" id="form-name" placeholder="Enter full name" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm" required>
-    </div>
-    <div>
-        <label class="block text-xs font-semibold text-slate-600 mb-1">WhatsApp Number</label>
-        <input type="tel" id="form-phone" placeholder="10-digit mobile number" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm" required>
-    </div>
-    <div>
-        <label class="block text-xs font-semibold text-slate-600 mb-1">Your District (Madhya Pradesh)</label>
-        <input type="text" id="form-district" placeholder="e.g. Bhopal, Indore" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm" required>
-    </div>
-    <button type="submit" class="w-full bg-blue-900 text-white font-bold py-3.5 rounded-xl text-sm">
-        Get Call From Expert
-    </button>
-</form>
-
-<script>
-function sendToWhatsApp(event) {
-    event.preventDefault();
-    const name = document.getElementById('form-name').value;
-    const phone = document.getElementById('form-phone').value;
-    const district = document.getElementById('form-district').value;
-    
-    // Construct the text message
-    const text = `Want to Known More !%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*District:* ${district}`;
-    
-    // Opens WhatsApp web or mobile app directly to your number
-    window.open(`https://wa.me/917389329976?text=${text}`, '_blank');
-}
-</script>
+                    
+                    <form id="leadForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Your Full Name</label>
+                            <input type="text" name="Name" placeholder="Enter full name" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-blue-950 text-sm" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">WhatsApp Number</label>
+                            <input type="tel" name="Phone" placeholder="10-digit mobile number" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-blue-950 text-sm" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Your District (Madhya Pradesh)</label>
+                            <input type="text" name="District" placeholder="e.g. Bhopal, Indore, Jabalpur" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-blue-950 text-sm" required>
+                        </div>
+                        <button type="submit" id="submitBtn" class="w-full bg-blue-900 hover:bg-blue-950 text-white font-bold py-3.5 rounded-xl shadow-md transition duration-300 text-sm flex items-center justify-center gap-2">
+                            Get Call From Expert <i class="fas fa-arrow-right text-xs"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- Trust Pillars -->
     <div class="bg-blue-50 border-y border-blue-100 py-5">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-3 gap-2 text-center">
             <div class="space-y-1">
@@ -139,6 +137,7 @@ function sendToWhatsApp(event) {
         </div>
     </div>
 
+    <!-- Requirements Section -->
     <section class="py-12 bg-white">
         <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-8">
@@ -171,6 +170,7 @@ function sendToWhatsApp(event) {
         </div>
     </section>
 
+    <!-- 3-Step Process Section -->
     <section class="py-12 bg-slate-50 border-t border-slate-100">
         <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-8">
@@ -204,6 +204,7 @@ function sendToWhatsApp(event) {
         </div>
     </section>
 
+    <!-- Mobile Sticky Conversion Bar -->
     <div class="fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 p-2.5 grid grid-cols-2 gap-2 sm:hidden z-50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
         <a href="https://wa.me/917389329976?text=Hi,%20I%20want%20to%20apply%20for%20a%20Character%20Certificate" class="bg-green-600 active:bg-green-700 text-white font-bold py-3 px-2 rounded-xl text-center text-xs flex items-center justify-center gap-2">
             <i class="fab fa-whatsapp text-lg"></i> WhatsApp Apply
@@ -213,6 +214,7 @@ function sendToWhatsApp(event) {
         </a>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800 text-center pb-20 sm:pb-8">
         <div class="max-w-7xl mx-auto px-4 space-y-2">
             <p class="text-slate-200 font-bold">MP Online Services</p>
@@ -223,5 +225,30 @@ function sendToWhatsApp(event) {
         </div>
     </footer>
 
+    <!-- Form Submit Automation Logic -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw_XE_Zo8YToNXOmXZP2RF18JAFFbi-rdwKtwUlu6fUYjApwZFVkcl8gKiC2RfytFHd/exec';
+        const form = document.getElementById('leadForm');
+        const btn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin text-xs"></i> Submitting... Please Wait';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    alert('Thank you! Your application details have been submitted successfully. Our team will contact you shortly.');
+                    form.reset();
+                    btn.disabled = false;
+                    btn.innerHTML = 'Get Call From Expert <i class="fas fa-arrow-right text-xs"></i>';
+                })
+                .catch(error => {
+                    alert('Error! Something went wrong. Please try again.');
+                    btn.disabled = false;
+                    btn.innerHTML = 'Get Call From Expert <i class="fas fa-arrow-right text-xs"></i>';
+                });
+        });
+    </script>
 </body>
 </html>
