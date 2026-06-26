@@ -93,7 +93,8 @@
                         <p class="text-xs text-slate-500 mt-0.5">Fill details to get instant assistance from our experts</p>
                     </div>
                     
-                    <form id="leadForm" class="space-y-4">
+                    <!-- Added data-netlify="false" to prevent deployment form hijacking -->
+                    <form id="leadForm" data-netlify="false" class="space-y-4">
                         <div>
                             <label class="block text-xs font-semibold text-slate-600 mb-1">Your Full Name</label>
                             <input type="text" name="Name" placeholder="Enter full name" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-blue-950 text-sm" required>
@@ -220,7 +221,7 @@
             <p class="text-slate-200 font-bold">MP Online Services</p>
             <p class="max-w-md mx-auto text-[11px] text-slate-500">Fast • Reliable • Secure digital citizen services across all districts of Madhya Pradesh.</p>
             <div class="text-[10px] text-slate-600 pt-4 border-t border-slate-800/60">
-                &copy; 2026 MP Online Services . All Rights Reserved.
+                &copy; 2026 MP Online Services. All Rights Reserved.
             </div>
         </div>
     </footer>
